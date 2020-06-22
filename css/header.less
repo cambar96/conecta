@@ -1,0 +1,30 @@
+.emcabezado {
+	display: flex;
+	background-color: @color-base2;
+	box-shadow: 0 0 3px;
+	&__image {
+		img {
+			width: 110px;
+			margin-left: 20px;
+		}
+	}
+		&__links {
+			display: flex;
+			width: 1150px;
+			justify-content: flex-end;
+			align-items: center;
+				ol {
+					list-style: none;
+			}
+					a {
+						text-decoration: none;
+						font-family: @fuente-base3;
+						font-size: 13px;
+						font-weight: bold;
+						color: @color-base3;
+		}
+		a:hover {
+			color: @color-base4;
+		}
+	}
+}

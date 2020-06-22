@@ -1,0 +1,20 @@
+mixin circulo(image,titulo)
+	.circulostodos
+		.circulo__contenido
+			h2=titulo
+		.circulo__imagen: img(src="images/"+image)
+
+mixin visionymision(imagen, titulo, contenido)
+	.visionymision__Separado
+		.visionymision__imagen: img(src="images/"+imagen)
+		.visionymision__contenido
+			h3=titulo
+			p=contenido
+
+
+mixin trabajemosJuntos(image,titulo,texto)
+	.trabajemos
+		.trabajemos__imagen: img(src="images/"+image)
+		.trabajemos__contenido
+			h2=titulo
+			p=texto

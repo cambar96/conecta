@@ -1,333 +1,198 @@
-:root: {
- --font-family: sans-serif; 
- --font-family2: arial;  
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ABeeZee Regular'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v13/esDR31xSG-6AGleN6tI.ttf) format('truetype');
 }
- 
-
-
-/* ------------------------------------------------*/
-/* -----TODA LA PAGINA ------*/
-
-.style {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-
+body {
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-family: 'ABeeZee';
 }
-
-/* -----EMCABEZADO---------*/
-
-
-    .emcabezado {
-    background-color: black;
-    padding-top: 2px;
-    font-family: var(--font-family2);
-    height: 65px;
-    box-shadow: 0 0 5px;
+.emcabezado {
+  display: flex;
+  background-color: #333126;
+  box-shadow: 0 0 3px;
 }
-
-.logo {
-display: flex;
-margin-top: 0px;
-padding-left: 20px;
+.emcabezado__image img {
+  width: 110px;
+  margin-left: 20px;
 }
-
-.menu {
-   display: flex;
-   align-items: center;
-   width: 100%;
-   justify-content: flex-end;
+.emcabezado__links {
+  display: flex;
+  width: 1150px;
+  justify-content: flex-end;
+  align-items: center;
 }
-
-.emcabezado ol {
-    list-style: none;
-    display: flex;
+.emcabezado__links ol {
+  list-style: none;
 }
-
-.emcabezado a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    margin: 10px;
+.emcabezado__links a {
+  text-decoration: none;
+  font-family: 'ABeeZee';
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
 }
-
-a:hover{
-    color: #0C89E8;
+.emcabezado__links a:hover {
+  color: #D4D4D4;
 }
-
-.fondo {
-    background-color: #fafafa;
+.conecta {
+  display: flex;
+  background-color: #FF5500;
+  height: 350px;
 }
-
- 
-/* -----PRIMERA SECCION----- */
-
-
-    .Que_es_conecta {
-        background: #ff5500;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 500px;
+.conecta__contenido {
+  width: 80%;
+  font-size: 20px;
+  margin-left: 50px;
 }
-
-.Que_es_conecta h1 {
-    padding-left: 20px;
-    margin-top: -20px;
-    color: black;
-    display: block;
-    font-size: 50px;
+.conecta__contenido h1 {
+  font-size: 50px;
+  padding: 20px;
+  font-family: 'ABeeZee', sans-serif;
 }
-
-.Que_es_conecta p {
-    padding-left: 30px;
-   color: black;
-    display: block;
-    font-size: 20px;
-    margin-bottom: 40px;
+.conecta__imagen {
+  margin: auto;
+  width: 80%;
 }
-
-.Que_es_conecta img {
-    align-items: center;
-  height: 500px;
-  width: 50%;
-
+.conecta__imagen img {
+  width: 70%;
+  margin-left: 100px;
+  border-radius: 100px;
 }
-
-
-.organizar {
-    width: 60%;
-    height: 300px;
-    margin: 50px;
-
+.circulo {
+  justify-content: space-evenly;
+  display: flex;
 }
-
-.descargar {
-    border: 1px solid;
-    border-radius: 10px;
-    border-color: black;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 100px;
-    margin-top: 100px;
-    text-decoration: none;
-    font-size: 15px;
-    background-color: black;
-    color:white;
-    box-shadow: 0 0 1px black;
+.circulo img {
+  width: 170px;
+  box-shadow: 0 0 2px;
+  border-radius: 100px;
 }
-
-.descargar:hover {
-    background-color: #0D57FF;
-    color: white;
-    border-color: #0D57FF;
-}
-
-
-/* ----CIRCULOS----*/
-
-
-.todos_los_circulos {
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 40px;
-margin-bottom: 40px;
-}
-
-.content {
-    width: 300px;
-}
-
-.todos_los_circulos h2 {
-    font-size: 15px;
-}
-
-.circulo1 {
-    margin-right: 50px; 
-    margin-top: 30px;  
-}
-
-
-.circulo2 {
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
-
-}
-
-.circulo3 {
-    margin-left: 50px;
-    margin-top: 30px;
-}
-
-
-/* -----SECCION 2 MISION Y VISION-----*/
-
-
-.titulo {
-margin-left: 30px;
-margin-bottom: 20px;
-}
-
-.para_el_transporte h1 {
-    margin-top: -50px;
-margin-left: 30px;
-margin-bottom: 70px;
-font-size: 2em;
-}
-
-
-.sobre_nosotros {
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    height: 50%;
-    width: 100%;
-}
-
-.nosotros {
-    text-align: center;
-    width: 50%;
-}
-
-.Nuestro_objetivo {
-font-size: 20px;
-}
-
-.mision {
-    font-size: 20px;
-    display: flex;
-}
-
-.mision img {
-    display: flex;
-}
-
-.parrafos {
-    display: block;
-}
-
-
-/* ------COMUNIDAD-------*/
-
 .comunidad {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 30px;
-    background-color: white;
-    display: flex;
-    height: 400px;
+  display: flex;
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
-
-.comunidad p {
-font-size: 16px;
-margin-left: 60px;
-margin-right: 40px;
+.comunidad_conttenido {
+  font-family: 'ABeeZee';
+  width: 80%;
+  font-size: 20px;
 }
-
-.texto {
-    width: 50%;
-    margin-top: 40px;
+.comunidad_conttenido h1 {
+  font-size: 50px;
 }
-
-.texto h2 {
-    font-size: 36px;
-    margin-left: 60px;
+.comunidad_conttenido p {
+  margin: 0px;
+  color: #333126;
 }
-
-.img {
-display: flex;
-height: 400px;
-width: 400px;
-margin-left: 100px;
+.comunidad_conttenido h6 {
+  margin: auto;
 }
-
-
-
-/* ------ALIADO------ */
-
-.aliado {
-    padding: 30px;
-    display: flex;
-background-color: black;
+.comunidad_imagen img {
+  width: 400px;
+  margin-left: 70px;
 }
-
-.nuestro_aliado {
-   padding-top: 40px;
-   padding-right: 50px;
+.visionymision {
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: #333126;
+  margin-top: 100px;
+  box-shadow: 0 0 5px;
+  display: flex;
 }
-
-.aliado img {
-    height: 400px;
-    width: 500px;
+.visionymision__Separado {
+  margin-top: 100px;
+  width: 450px;
+  height: 500px;
+  border-radius: 50px;
 }
-
-.nuestro_aliado h2 {
-    font-size: 60px;
-    margin: 0;
-    color: white;
-
+.visionymision img {
+  width: 100%;
+  border-radius: 50px;
 }
-
-.nuestro_aliado p {
-    font-size: 16px;
-    color: white;
+.visionymision__contenido h3 {
+  color: #D4D4D4;
+  text-transform: uppercase;
 }
-
-.nuestro_aliado h5 {
-    color: white;
+.visionymision__contenido p {
+  color: #fafafa;
 }
-
-/* IMAGEN--------*/
-
-
-.imagenc {
-    display: flex;
-    margin-top: 50px;
-
+.nuestroAliado {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 70px;
+  display: flex;
+  background-color: #0f8501;
 }
-
-.imagencarros {
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.nuestroAliado__imagen img {
+  padding-right: 60px;
+  width: 400px;
+  height: 400px;
 }
-
-
-
-/* -------TRABAJEMOS JUNTOS------- */
-
-.Trabajemos_juntos {
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    justify-content: center;
-    text-align: center;
+.nuestroAliado__contenido h2 {
+  color: #D4D4D4;
+  text-transform: uppercase;
+  font-size: 60px;
 }
-
-.trabajoempresas {
-    margin-right: 50px;
+.nuestroAliado__contenido p {
+  color: #fafafa;
+  font-size: 20px;
+  width: 700px;
 }
-
-.trabajopropietarios {
-    margin-left: 50px;
-    margin-right: 50px;
+.trabajaConecta {
+  margin-top: 100px;
 }
-
-.trabajoparacualquiera {
-    margin-left: 50px;
+.trabajaConecta__contenido {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-
-
-/* ----------PIE DE PAGINA--------- */
- 
-
-.piedepagina {
-    background-color: black;
-    height: 40%;
+.trabajemosJuntos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
 }
-
+.trabajemos {
+  text-align: justify;
+}
+.trabajemos__imagen img {
+  width: 80px;
+}
+.trabajemos__contenido {
+  width: 300px;
+}
+.descargar {
+  display: flex;
+  height: 400px;
+  background-color: black;
+}
+.descargar__logo {
+  padding-left: 50px;
+  background-color: #333126;
+  width: 250px;
+  height: 100px;
+}
+.descargar__logo img {
+  width: 200px;
+}
+.descargar__apps {
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: end;
+  background-color: #333126;
+}
+.descargar__apps img {
+  width: 150px;
+  margin-left: 5px;
+  margin-top: 30px;
+  box-shadow: 0 0 5px;
+}
