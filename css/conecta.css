@@ -12,14 +12,15 @@ body {
 }
 .emcabezado {
   display: flex;
-  background-color: #333126;
+  background-color: #0A0908;
   box-shadow: 0 0 3px;
 }
 .emcabezado__image img {
   width: 110px;
-  margin-left: 20px;
+  padding-left: 100px;
 }
 .emcabezado__links {
+  padding-right: 100px;
   display: flex;
   width: 1150px;
   justify-content: flex-end;
@@ -27,42 +28,50 @@ body {
 }
 .emcabezado__links ol {
   list-style: none;
+  padding: 5px;
 }
 .emcabezado__links a {
   text-decoration: none;
   font-family: 'ABeeZee';
   font-size: 13px;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: 600;
+  border: solid #0A0908 10px;
+  border-radius: 30px;
+  color: #D4D4D4;
+  background-color: #0A0908;
 }
 .emcabezado__links a:hover {
-  color: #D4D4D4;
+  border-color: #333126;
+  background-color: #333126;
 }
 .conecta {
   display: flex;
   background-color: #FF5500;
   height: 350px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .conecta__contenido {
+  margin: auto;
   width: 80%;
   font-size: 20px;
-  margin-left: 50px;
 }
 .conecta__contenido h1 {
   font-size: 50px;
-  padding: 20px;
   font-family: 'ABeeZee', sans-serif;
 }
 .conecta__imagen {
+  text-align: end;
   margin: auto;
   width: 80%;
 }
 .conecta__imagen img {
   width: 70%;
-  margin-left: 100px;
   border-radius: 100px;
 }
 .circulo {
+  padding-left: 100px;
+  padding-right: 100px;
   justify-content: space-evenly;
   display: flex;
 }
@@ -74,8 +83,9 @@ body {
 .comunidad {
   display: flex;
   padding-top: 100px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .comunidad_conttenido {
   font-family: 'ABeeZee';
@@ -93,7 +103,7 @@ body {
   margin: auto;
 }
 .comunidad_imagen img {
-  width: 400px;
+  width: 350px;
   margin-left: 70px;
 }
 .visionymision {
@@ -101,6 +111,9 @@ body {
   align-items: baseline;
   background-color: #333126;
   margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   box-shadow: 0 0 5px;
   display: flex;
 }
@@ -122,12 +135,11 @@ body {
   color: #fafafa;
 }
 .nuestroAliado {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: flex;
-  background-color: #0f8501;
 }
 .nuestroAliado__imagen img {
   padding-right: 60px;
@@ -135,28 +147,29 @@ body {
   height: 400px;
 }
 .nuestroAliado__contenido h2 {
-  color: #D4D4D4;
+  color: #0A0908;
   text-transform: uppercase;
   font-size: 60px;
 }
 .nuestroAliado__contenido p {
-  color: #fafafa;
+  color: #333126;
   font-size: 20px;
   width: 700px;
 }
 .trabajaConecta {
   margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-.trabajaConecta__contenido {
-  padding-left: 50px;
-  padding-right: 50px;
+.trabajaConecta h1 {
+  text-transform: uppercase;
 }
 .trabajemosJuntos {
+  padding-left: 100px;
+  padding-right: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
   justify-content: space-between;
 }
 .trabajemos {
